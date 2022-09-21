@@ -17,11 +17,13 @@ public class MyController {
     public List<Course> retrieveData() {
 
         return Arrays.asList(new Course(1, "Java", "Javatpoint"),
-                new Course(1, "Java", "Javatpoint"),
-                new Course(1, "Java", "Javatpoint")
+                new Course(2, "Java", "Javatpoint"),
+                new Course(3, "Java", "Javatpoint"),
+                new Course(4, "Java", "Javatpoint"),
+        new Course(5, "Java", "Javatpoint")
         );
     }
-        @GetMapping("Map")
+        @GetMapping("/Map")
         public Map<String, String> sayHello() {
             HashMap<String, String> map = new HashMap<>();
             map.put("key", "value");
